@@ -1,0 +1,2 @@
+timestamp,ip,action,action_name,reward,request_rate,attack_type,outcome
+2025-10-30T06:30:32.369658+00:00,127.0.0.1,0,observe_silent,5.00,0.00,,"{""data_collected"": 0.0, ""attacker_time_wasted"": 3.973642985026042e-10, ""system_load"": 0.0, ""detection_evasion"": 0.0, ""attack_prevented"": 0.0, ""threat_intelligence"": 0.0, ""resource_waste"": 0.0, ""stealth_maintained"": 1.0, ""deception_successful"": 0.0, ""redirected_successfully"": 0.0}"

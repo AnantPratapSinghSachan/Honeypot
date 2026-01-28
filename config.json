@@ -1,0 +1,32 @@
+{
+  "agent": {
+    "state_dim": 22,
+    "action_dim": 9,
+    "gamma": 0.99,
+    "epsilon_start": 1.0,
+    "epsilon_end": 0.01,
+    "epsilon_decay": 0.995,
+    "learning_rate": 0.0001,
+    "batch_size": 64,
+    "target_update": 10,
+    "memory_size": 100000
+  },
+  "honeypot": {
+    "bind_ip": "0.0.0.0",
+    "http_port": 8080,
+    "tcp_ports": [21, 22, 23, 25, 80, 443, 3306, 3389],
+    "log_dir": "logs"
+  },
+  "rl_integration": {
+    "training_mode": false,
+    "checkpoint_path": "checkpoints/agent_final.pt",
+    "auto_save_interval": 1000,
+    "min_confidence": 0.7
+  },
+  "response_config": {
+    "rate_limit_threshold": 30,
+    "block_duration": 300,
+    "tarpit_delay": 10.0,
+    "high_interaction_threshold": 0.8
+  }
+}
